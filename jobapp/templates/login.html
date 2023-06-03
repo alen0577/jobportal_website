@@ -1,0 +1,98 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+Signin
+{% endblock %}
+
+
+
+{% block body %}
+
+<div class="container">
+    <div class="card text-center mb-3 shadow-lg p-3 mb-5  rounded position-absolute top-50 start-50 translate-middle" style="width: 22rem;">
+        <div class="card-body">
+          <h1 class="card-title text-white" style="font-family:'Rampart One', cursive;" ></h1>
+          <form method="post" action="" target="_self" class="needs-validation" novalidate>
+            {% csrf_token %}
+            <div class="container">
+
+              <h5 class="header" style="text-align: center;color: white;font-size: x-larger;">Signin</h5><br>
+              <div class="form-group">
+                <label for="uname" class="text-white">Username*</label>
+                <input type="text" class="form-control" style="background: transparent;color: white;" id="uname"  name="uname" required>
+                    
+              </div><br>
+                
+              <div class="form-group">
+                <label for="pwd"  class="text-white">Password*</label>
+                <input type="password"  class="form-control" style="background: transparent; color: white;" id="pwd" name="pswd" required>
+                    
+              </div><br>
+              
+                  
+              <a href="{% url 'home' %}"><button type='button' class="btn btn-outline-dark" style=" color: rgb(255, 255, 255);margin-bottom: 5px;">Signin</button></a>
+              <br><br>
+              <p class="text-white">New to TechMate ?<br><a href="{% url 'register' %}" style="color:rgb(255, 255, 255);">Get started now</a></p>
+                  
+                  
+      
+            </div>
+          </form>
+        </div>
+    </div>
+</div>
+
+<script>
+
+    //  Example starter JavaScript for disabling form submissions if there are invalid fields
+    (() => {
+    'use strict'
+    
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    const forms = document.querySelectorAll('.needs-validation')
+    
+    // Loop over them and prevent submission
+    Array.from(forms).forEach(form => {
+      form.addEventListener('submit', event => {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+    
+        form.classList.add('was-validated')
+      }, false)
+    })
+    })()
+    
+    
+</script>
+
+<style>
+    
+    .card{
+      border-radius: 10px;
+      border-color: rgb(255, 255, 255);
+      border-style: solid;
+      background-color: rgb(0, 0, 0);
+      opacity: .7;
+    }
+
+</style>
+<style>
+    a{
+    font-size: 1rem; /* default font size */
+    transition: font-size 0.2s ease-in-out; /* transition effect */
+    text-decoration:none ;    
+
+    }
+    a:hover{
+    font-size: 1.1rem; /* larger font size on hover */
+    text-decoration-line: underline;    
+    }
+    
+</style>
+
+
+
+{% endblock %}

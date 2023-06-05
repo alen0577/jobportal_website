@@ -13,7 +13,7 @@ Signin
     <div class="card text-center mb-3 shadow-lg p-3 mb-5  rounded position-absolute top-50 start-50 translate-middle" style="width: 22rem;">
         <div class="card-body">
           <h1 class="card-title text-white" style="font-family:'Rampart One', cursive;" ></h1>
-          <form method="post" action="" target="_self" class="needs-validation" novalidate>
+          <form method="post" action="{% url 'loginuser' %}" target="_self" class="needs-validation" novalidate>
             {% csrf_token %}
             <div class="container">
 
@@ -26,14 +26,14 @@ Signin
                 
               <div class="form-group">
                 <label for="pwd"  class="text-white">Password*</label>
-                <input type="password"  class="form-control" style="background: transparent; color: white;" id="pwd" name="pswd" required>
+                <input type="password"  class="form-control" style="background: transparent; color: white;" id="pwd" name="password" required>
                     
               </div><br>
               
                   
-              <a href="{% url 'home' %}"><button type='button' class="btn btn-outline-dark" style=" color: rgb(255, 255, 255);margin-bottom: 5px;">Signin</button></a>
+              <button type='submit' class="btn btn-outline-dark" style=" color: rgb(255, 255, 255);margin-bottom: 5px;">Signin</button>
               <br><br>
-              <p class="text-white">New to TechMate ?<br><a href="{% url 'register' %}" style="color:rgb(255, 255, 255);">Get started now</a></p>
+              <p class="text-white">New to JobFinder ?<br><a href="{% url 'register' %}" style="color:rgb(255, 255, 255);">Get started now</a></p>
                   
                   
       

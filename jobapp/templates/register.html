@@ -13,14 +13,14 @@ Signup
     <div class="card text-center mb-3 shadow-lg p-3 mb-5  rounded position-absolute top-50 start-50 translate-middle" style="width: 22rem;">
         <div class="card-body">
           <h1 class="card-title text-white" style="font-family:'Rampart One', cursive;" ></h1>
-          <form method="post" action="" target="_self" class="needs-validation" novalidate>
+          <form method="post" action="{% url 'register' %}" target="_self" class="needs-validation" novalidate>
             {% csrf_token %}
             <div class="container">
 
-              <h5 class="header" style="text-align: center;color: white;font-size: x-larger;">Signup</h5><br>
+              <h5 class="header" style="text-align: center;color: white;font-size: x-larger;">Create an account</h5><br>
               <div class="form-group">
-                <label for="uname" class="text-white">Name*</label>
-                <input type="text" class="form-control" style="background: transparent;color: white;" id="uname"  name="email" required>
+                <label for="uname" class="text-white">Username*</label>
+                <input type="text" class="form-control" style="background: transparent;color: white;" id="uname"  name="uname" required>
                     
               </div><br>
               <div class="form-group">
@@ -31,26 +31,23 @@ Signup
                 
               <div class="form-group">
                 <label for="pwd"  class="text-white">Password*</label>
-                <input type="password"  class="form-control" style="background: transparent; color: white;" id="pwd" name="pswd" required>
+                <input type="password"  class="form-control" style="background: transparent; color: white;" id="pwd" name="password" required>
                     
               </div><br>
               <div class="form-group">
-                <!-- <label for="pwd"  class="text-white">Work Status*</label><br> -->
+                <label for="pwd"  class="text-white">Your role*</label><br>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                    <label class="form-check-label" for="inlineRadio1" style="background: transparent; color: white;">Fresher</label>
+                    <input class="form-check-input" type="radio" name="role" id="inlineRadio1" value="Employeer">
+                    <label class="form-check-label" for="inlineRadio1" style="background: transparent; color: white;">Employeer</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                    <label class="form-check-label" for="inlineRadio2" style="background: transparent; color: white;">Experienced</label>
+                    <input class="form-check-input" type="radio" name="role" id="inlineRadio2" value="Job seeker">
+                    <label class="form-check-label" for="inlineRadio2" style="background: transparent; color: white;">Job seeker</label>
                 </div>   
               </div><br>
-              <div class="form-group">
-                <label for="resume"  class="text-white">Upload Resume*</label>
-                <input type="file" class="form-control">
-              </div><br>
+              
                   
-              <a href="{% url 'login' %}"><button type='button' class="btn btn-outline-dark" style=" color: rgb(255, 255, 255);margin-bottom: 5px;">Signup</button></a>
+              <a href="{% url 'login' %}"><button type='submit' class="btn btn-outline-dark" style=" color: rgb(255, 255, 255);">Signup</button></a>
               <br><br>
               <p class="text-white">Already a member ?<br><a href="{% url 'login' %}" style="color:rgb(255, 255, 255);">Continue...</a></p>
                   

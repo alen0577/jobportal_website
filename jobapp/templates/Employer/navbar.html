@@ -25,6 +25,8 @@
         }
         ul a:hover{
           font-size: 1.02rem; /* larger font size on hover */
+          
+          
              
         }
         
@@ -42,33 +44,25 @@
 
     <nav class="navbar navbar-expand-lg"  style="background-color: rgb(255, 255, 255);border-bottom: rgb(0, 0, 0) solid 1px;">
         <div class="container">
-          <a class="navbar-brand animate__shakeY" style="color: rgb(0, 140, 114);font-family: 'Rowdies', cursive; font-size: xx-large;">JobFinder <i class="fa fa-search-dollar"></i></a>
+          <a class="navbar-brand " style="color: rgb(0, 140, 114);font-family: 'Rowdies', cursive; font-size: xx-large;">JobFinder <i class="fa fa-search-dollar"></i></a>
+          <p class="text-sm-center" style="color: rgb(0, 140, 114);">emp</p>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" style="color: rgb(0, 0, 0);"  aria-current="page" href="{% url 'home' %}"><i class="fa fa-home fa-lg" style="color: rgb(0, 140, 114);"></i></a>
+                <a class="nav-link active" style="color: rgb(0, 0, 0);"  aria-current="page" href="{% url 'employerhome' %}"><i class="fa fa-dashboard fa-lg" style="color: rgb(0, 140, 114);"></i> Dashboard</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" style="color: rgb(0, 0, 0);" href="{% url 'messages' %}"><i class="fa fa-comments fa-lg" style="color: rgb(0, 140, 114);"></i></a>
+                <a class="nav-link" style="color: rgb(0, 0, 0);" href=""><i class="fa fa-comments fa-lg" style="color: rgb(0, 140, 114);"></i> Messages</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" style="color: rgb(0, 0, 0);" href="{% url 'notifications' %}"><i class="fa fa-bell fa-lg" style="color: rgb(0, 140, 114);"></i></a>
+                <a class="nav-link" style="color: rgb(0, 0, 0);" href=""><i class="fa fa-pencil-alt fa-lg" style="color: rgb(0, 140, 114);"></i> Post a Job</a>
               </li>
-              
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" style="color: rgb(0, 140, 114)" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  <i class="fa fa-user fa-lg" style="color: rgb(0, 140, 114);"></i>
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="{% url 'profile' %}"><i class="fa fa-file fa-lg" style="color: rgb(0, 140, 114);"></i>  Profile</a></li>
-                  <li><a class="dropdown-item" href="{% url 'myjobs' %}"><i class="fa fa-save fa-lg" style="color: rgb(0, 140, 114);"></i>  My Jobs</a></li>
-                  <!-- <li><a class="dropdown-item" href="#"><i class="fa fa-cogs fa-lg" style="color: rgb(0, 140, 114);"></i>  Settings</a></li> -->
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="{% url 'logout' %}"> <i class="fa fa-power-off" style="color: rgb(0, 140, 114);"></i>  Signout</a></li>
-                </ul>
+              <li class="nav-item">
+                <a class="nav-link" style="color: rgb(0, 0, 0);" href="{% url 'logout' %}"><i class="fa fa-user fa-lg" style="color: rgb(0, 140, 114);"></i> Accounts</a>
+              </li>
             </ul>
 
                           

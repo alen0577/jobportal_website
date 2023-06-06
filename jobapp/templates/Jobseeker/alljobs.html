@@ -2,43 +2,19 @@
 {% load static %}
 
 {% block title %}
-Home
+All Jobs
 {% endblock %}
 
 
 
 {% block body %}
-<section>
-    <div class="container mt-5 mb-5">
-        <div class="row">
-            <div class="col-lg-1"></div>
-            <div class="col-lg-10 mt-5 mb-5">
-                <div class="row">
-                    <div class="col-lg-1"></div>
-                    <div class="col-lg-4">
-                        <h5 class="mt-1 mb-1">What</h5>
-                        <input type="search" class="form-control w-100 mt-1 mb-1" placeholder="job title, key words or company" style="color:rgb(0, 140, 114);border: 1px solid rgb(0, 140, 114) ;">
-                    </div>
-                    <div class="col-lg-4">
-                        <h5 class="mt-1 mb-1">Where</h5>
-                        <input type="search" class="form-control w-100 mt-1 mb-1 " placeholder="Kochi, Kerala" style="color:rgb(0, 140, 114);border: 1px solid rgb(0, 140, 114) ;">
-                    </div>
-                    <div class="col-lg-2 mt-4"><button type="button" class="btn sp" style="color: rgb(0, 140, 114);border: 1px solid rgb(0, 140, 114); margin-top: 7px;">Find Jobs</button></div>
-                    <div class="col-lg-1"></div>
-                </div>
-                
-            </div>
-            <div class="col-lg-1"></div>
-        </div>
-    </div>
-</section>
-<hr>
+
 <section>
     <div class="container">
         <div class="row mt-5">
             <div class="col-lg-2"></div>
             <div class="col-lg-8">
-                <h6 class=" mb-3">Jobs similar to your search</h6>
+                <h6 class=" mb-3">All available jobs</h6>
             </div>
             <div class="col-lg-2"></div>
             
@@ -143,38 +119,6 @@ Home
                           </div>
                         </div>
                     </div>
-                    
-                    
-                    
-                    
-                   
-                </div>
-            </div>
-            <div class="col-lg-2"></div>
-        
-        </div>
-        <div class="row">
-            <center><a href="{% url 'alljobs' %}"><button type="button" class="btn sp mb-5" style="color: rgb(0, 140, 114);border: 1px solid rgb(0, 140, 114);">More Jobs</button></a></center>
-        </div>
-
-    </div>
-</section>
-
-
-<section>
-    <div class="container">
-        <div class="row mt-5">
-            <div class="col-lg-2"></div>
-            <div class="col-lg-8">
-                <h6 class=" mb-3">Current openings</h6>
-            </div>
-            <div class="col-lg-2"></div>
-            
-        </div>
-        <div class="row mb-5 mt-1">
-            <div class="col-lg-2"></div>
-            <div class="col-lg-8">
-                <div class="row row-cols-1 row-cols-md-3 g-4">
                     <div class="col">
                         <div class="card card1 h-100  p-2 mb-2 bg-body-tertiary rounded">
                           <div class="card-body">
@@ -271,17 +215,19 @@ Home
                           </div>
                         </div>
                     </div>
+                    
+                    
+                    
+                    
+                   
                 </div>
             </div>
             <div class="col-lg-2"></div>
-
-
+        
         </div>
-        <div class="row">
-            <center><a href="{% url 'alljobs' %}"><button type="button" class="btn sp mb-5" style="color: rgb(0, 140, 114);border: 1px solid rgb(0, 140, 114);">More Jobs</button></a></center>
-        </div>
+        
+
     </div>
-
 </section>
 
 <hr class="mt-5">
@@ -336,9 +282,6 @@ Home
 </section> 
 
 
-
-
-
 <style>
     button.sp{
     transition: box-shadow 0.3s ease-in-out;
@@ -363,4 +306,8 @@ Home
         
   }
 </style>
+
+
+
+
 {% endblock %}

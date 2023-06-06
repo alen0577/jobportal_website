@@ -19,16 +19,16 @@ def loginuser(request):
             if user.is_staff:
                 auth.login(request,user)
                 print('1')
-                return redirect('home')
+                return redirect('employerhome')
             else:
                 auth.login(request,user)
                 print('2')
         
-                return redirect('home') 
+                return redirect('employerhome') 
         else:
 
             print('last')             
-            return redirect('/')
+            return redirect('home')
           
 
 def register(request):
@@ -39,7 +39,7 @@ def register(request):
         role=request.POST['role']
         first_name='none'
         last_name='none'
-        user1=User.objects.create(email=email,password=password,first_name=first_name,last_name=last_name,username=username)
+        user1=User.objects.create_user(email=email,password=password,first_name=first_name,last_name=last_name,username=username)
         user1.save()
         data=User.objects.get(id=user1.id)
         extdata=User1(user=data,radio_field=role)
@@ -58,3 +58,31 @@ def logout(request):
 
 def  home(request):
     return render(request, 'Jobseeker/home.html')
+
+
+def employerhome(request):
+    return render(request,'Employer/employerhome.html')    
+
+
+def jobdetails(request):
+    return render(request,'Jobseeker/jobdetails.html')    
+
+def alljobs(request):
+    return render(request,'Jobseeker/alljobs.html')    
+
+
+def notifications(request):
+    return render(request,'jobseeker/notifications.html')    
+
+def profile(request):
+    return render(request,'jobseeker/profile.html')
+
+def editprofile(request):
+    return render(request,'jobseeker/editprofile.html')    
+
+
+def messages(request):
+    return render(request,'jobseeker/messages.html')  
+
+def myjobs(request):
+    return render(request,'jobseeker/myjobs.html')         

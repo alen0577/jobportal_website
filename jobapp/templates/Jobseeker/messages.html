@@ -1,0 +1,217 @@
+{% extends 'Jobseeker/navbar.html' %}
+{% load static %}
+
+{% block title %}
+Messages
+{% endblock %}
+
+
+
+{% block body %}
+
+<section>
+  <div class="container mt-5 mb-3">
+    <div class="row mt-5 mb-3">
+      <div class="col-lg-4">
+        <div class="row">
+          <div class="box" style="background-color: rgb(245, 245, 245);">
+            <h3 style="color: rgb(0, 140, 114);">Messages</h3>
+            <select name="msg" class="form-select mb-3" style="color: rgb(0, 140, 114);" id="">
+                <option>Inbox</option>
+                <option>Archive</option>
+                <option>Spam</option>
+            </select>
+            
+          </div>
+            
+        </div>
+        <div class="row">
+          <div class="box" style="background-color: rgb(245, 245, 245);">
+            <table class="table table-hover active">
+              <tbody>
+                <div class="col-lg-3">
+                  <td><i style="color: rgb(0, 140, 114);" class="fa fa-building fa-2x mt-4"></i></td>
+                </div>
+                <div class="col-lg-6">
+                  <td>
+                    <a href=""><p>TCS</p></a>
+                    <p>Dear Alex Jhonson...</p>
+
+                  </td>
+                  
+
+                </div>
+                <div class="col-lg-3">
+                  <td>June 2 2023</td>
+                </div>
+                
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="row">
+          <div class="box" style="background-color: rgb(245, 245, 245);">
+            <table class="table table-hover">
+              <tbody>
+                <div class="col-lg-3">
+                  <td><i style="color: rgb(0, 140, 114);" class="fa fa-building fa-2x mt-4"></i></td>
+                </div>
+                <div class="col-lg-6">
+                  <td>
+                    <a href=""><p>Wipro</p></a>
+                    <p>Dear Alex Jhonson...</p>
+
+                  </td>
+                  
+
+                </div>
+                <div class="col-lg-3">
+                  <td>May 25 2023</td>
+                </div>
+                
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <div class="box" style="background-color: rgb(245, 245, 245);">
+            <table class="table table-hover mt-2 mb-2">
+              <tbody>
+                <div class="col-lg-3">
+                  <td><i style="color: rgb(0, 140, 114);" class="fa fa-building fa-2x mt-4"></i></td>
+                </div>
+                <div class="col-lg-6">
+                  <td>
+                    <a href=""><p>IBM</p></a>
+                    <p>Dear Alex Jhonson...</p>
+
+                  </td>
+                  
+
+                </div>
+                <div class="col-lg-3">
+                  <td>May 10 2023</td>
+                </div>
+                
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>  
+      <div class="col-lg-1"></div>
+      <div class="col-lg-5">
+        <div class="row">
+          <div class="box mt-1" style="background-color: rgb(245, 245, 245);">
+            <h1 class="mt-2 mb-2" style="color: rgb(0, 140, 114); text-align: center;" ><i class="fa fa-comments fa-lg"></i></h1>
+          </div>
+        
+        </div>
+  
+        <div class="row">
+          <div class="box mb-3 border-top" style="background-color: rgb(245, 245, 245);">
+              
+              <h3>No messages right now. Check back later !</h3>
+              <p>You have no messages right now... Apply more jobs to get hired.
+              </p>
+          </div>
+        </div>  
+        <div class="row">
+          <center><a href="{% url 'home' %}"><button type="button" class="btn sp mb-5" style="color: rgb(0, 140, 114);border: 1px solid rgb(0, 140, 114);">Find Jobs</button></a></center>
+        </div>  
+      </div>  
+       
+      <div class="col-lg-2"></div>
+        
+    </div>
+        
+  </div>
+</section>
+
+
+<hr class="mt-5">
+<section id="sectionlast">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-2 col-md-2"></div>
+      <div class="col-lg-3 col-md-3">
+        <h5 class="text-title" style="color: rgb(0, 0, 0);margin-top: 50px;">Quick links</h5>
+        <ul>
+          <li style="color: rgb(0, 0, 0);"><a href="{% url 'home' %}" style="color: rgb(0, 0, 0);text-decoration: none;">Home</a></li>
+          <li style="color: rgb(0, 0, 0);"><a href="" style="color: rgb(0, 0, 0);text-decoration: none;">Messages</a></li>
+          <li style="color: rgb(0, 0, 0);"><a href="" style="color: rgb(0, 0, 0);text-decoration: none;">Notifications</a></li>
+          <li style="color: rgb(0, 0, 0);"><a href="" style="color: rgb(0, 0, 0);text-decoration: none;">Profile</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-3">
+        <h5 class="text-title" style="color: rgb(0, 0, 0);margin-top: 50px;">Contact</h5>
+        <ul>
+          <li style="color: rgb(0, 0, 0);"><a href="#" style="color: rgb(0, 0, 0);text-decoration: none;"><i class="bi bi-geo m-2"></i>Banglore,India</a></li>
+          <li style="color: rgb(0, 0, 0);"><a href="#" style="color: rgb(0, 0, 0);text-decoration: none;"><i class="bi bi-telephone m-2"></i>0481-0772255</a></li>
+          <li style="color: rgb(0, 0, 0);"><a href="#" style="color: rgb(0, 0, 0);text-decoration: none;"><i class="bi bi-instagram m-2"></i><i class="bi bi-facebook m-2"></i><i class="bi bi-twitter m-2"></i><i class="bi bi-linkedin m-2"></i></a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-3">
+        <h5 class="text-title" style="color: rgb(0, 0, 0);margin-top: 50px;">Connect with Us</h5>
+       
+        <p style="color: rgb(0, 0, 0);"><p style="color: rgb(0, 0, 0);text-decoration: none;">Subscribe our email for <br>new job updates </p></p>
+        <p style="color: rgb(0, 0, 0);">
+          <nav class="navbar">
+            <div class="container-fluid" style="background: transparent;">
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" style="color: rgb(0, 140, 114);border: solid 1px;" placeholder="Email" aria-label="Search">
+                <button class="btn sp" type="button" style="color:rgb(0, 140, 114); border: solid 1px;">Subscribe</button>
+              </form>
+            </div>
+            
+          </nav>
+        </p>
+               
+        
+      </div>
+      <div class="col-lg-1 col-md-1"></div>
+    </div>
+  </div>
+
+
+  <div class="card-footer" style="height: 45px; background-color: rgb(245, 245, 245);">
+    <p class="text-center" style="color: rgb(0, 140, 114);"><i class="fa fa-copyright"></i>JobFinder.com | All rights reserved | jobfinder@gmail.com</p>
+  </div>
+
+</section> 
+
+
+<style>
+    button.sp{
+    transition: box-shadow 0.3s ease-in-out;
+  }
+
+
+  button.sp:hover{
+    transform: scale(1.05);
+    
+    
+    box-shadow: 0px 0px 10px rgb(0, 140, 114, .5);
+
+  }
+
+  .card1{
+    transition: box-shadow 0.3s ease-in-out;
+  }
+    
+  .card1:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px rgb(0, 140, 114, .5);
+        
+  }
+
+  a{
+    font-size: 1rem; /* default font size */
+    text-decoration:none ;
+  }
+  .active{
+    background-color: rgb(220, 220, 220)
+  }
+</style>
+
+
+{% endblock %}

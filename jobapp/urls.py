@@ -15,6 +15,14 @@ urlpatterns = [
     path('editprofile/',views.editprofile,name='editprofile'),
     path('messages/',views.messages,name='messages'),
     path('myjobs/',views.myjobs,name='myjobs'),
+    path('postjob/',views.postjob,name='postjob'),
+    path('empprofile/',views.empprofile,name='empprofile'),
+    path('empeditprofile/',views.empeditprofile,name='empeditprofile'),
+    path('empjobdetails/',views.empjobdetails,name='empjobdetails'),
+    path('jobupdate/',views.jobupdate,name='jobupdate'),
+     path('applicants/',views.applicants,name='applicants'),
+     path('empmessages/',views.empmessages,name='empmessages'),
+
 
 
 ]

@@ -1,8 +1,8 @@
-{% extends 'Jobseeker/navbar.html' %}
+{% extends 'Employer/navbar.html' %}
 {% load static %}
 
 {% block title %}
-Messages
+Messages emp
 {% endblock %}
 
 
@@ -17,8 +17,8 @@ Messages
           <div class="box" style="background-color: rgb(245, 245, 245);">
             <h3 style="color: rgb(0, 140, 114);">Messages</h3>
             <select name="msg" class="form-select mb-3" style="color: rgb(0, 140, 114);" id="">
+                <option>Sent</option>
                 <option>Inbox</option>
-                <option>Archive</option>
                 <option>Spam</option>
             </select>
             
@@ -58,15 +58,15 @@ Messages
                 </div>
                 <div class="col-lg-6">
                   <td>
-                    <a href=""><p>Wipro</p></a>
-                    <p>Dear Alex Jhonson...</p>
+                    <a href=""><p>TCS</p></a>
+                    <p>Dear Alphin Thomas...</p>
 
                   </td>
                   
 
                 </div>
                 <div class="col-lg-3">
-                  <td>May 25 2023</td>
+                  <td>June 2 2023</td>
                 </div>
                 
               </tbody>
@@ -82,15 +82,15 @@ Messages
                 </div>
                 <div class="col-lg-6">
                   <td>
-                    <a href=""><p>IBM</p></a>
-                    <p>Dear Alex Jhonson...</p>
+                    <a href=""><p>TCS</p></a>
+                    <p>Dear Justin Thomas...</p>
 
                   </td>
                   
 
                 </div>
                 <div class="col-lg-3">
-                  <td>May 10 2023</td>
+                  <td>June 2 2023</td>
                 </div>
                 
               </tbody>
@@ -142,7 +142,7 @@ Messages
               
           </div>
         </div>  
-        <div class="row">
+        <!-- <div class="row">
           <div class="box " style="background-color: rgb(245, 245, 245);">
             <textarea name="" class="form-control mb-3" style="color: rgb(0, 0, 0);" id="" cols="30" rows="5">
               
@@ -154,7 +154,7 @@ Messages
                 
                
           </div>
-        </div>      
+        </div>       -->
           
       </div>  
        

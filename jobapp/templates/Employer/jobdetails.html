@@ -1,4 +1,4 @@
-{% extends 'Jobseeker/navbar.html' %}
+{% extends 'Employer/navbar.html' %}
 {% load static %}
 
 {% block title %}
@@ -28,14 +28,14 @@ Job details
                     </div>
                     
                     <div class="col-lg-4">
-                        <div class="row  mt-4">
-                          <center><button class="btn sp mb-3 w-50" type="button" style="color: rgb(0, 140, 114); border: solid 1px;" id="liveAlertBtn" >Apply</button></center>
+                        <!-- <div class="row  mt-4">
+                          <button class="btn sp mb-3" type="button" style="color: rgb(0, 140, 114); border: solid 1px;" id="liveAlertBtn" >Inactive</button>
 
                           <div id="liveAlertPlaceholder"></div>
-                          <!-- <button type="button" class="btn btn-primary" id="liveAlertBtn">Show live alert</button> -->
+                          <button type="button" class="btn btn-primary" id="liveAlertBtn">Show live alert</button>
                            
 
-                        </div>
+                        </div> -->
 
                     </div>
                 </div>
@@ -120,10 +120,18 @@ Job details
                     <p style="color: rgb(123, 123, 123);"><i class="fa fa-user"></i> Hiring 10+ candidates for this role.</p>
 
                 </div>
+                <div class="row  mt-4">
+                    <a href="{% url 'jobupdate' %}"><button class="btn sp mb-3 btn-sm w-25" type="button" style="color: rgb(0, 140, 114); border: solid 1px;" >Edit</button></a>
+    
+                    
+                     
+    
+                </div>
                 
             </div>
             
             <div class="col-lg-2"></div>
+            
         </div>
     </div>
 </section>
@@ -205,7 +213,7 @@ Job details
   }
 </style>
 
-<script>
+<!-- <script>
   const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
 const appendAlert = (message, type) => {
   const wrapper = document.createElement('div')
@@ -225,5 +233,5 @@ if (alertTrigger) {
     appendAlert('Applied Successfully!', 'success')
   })
 }
-</script>
+</script> -->
 {% endblock %}

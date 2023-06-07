@@ -55,14 +55,21 @@
                 <a class="nav-link active" style="color: rgb(0, 0, 0);"  aria-current="page" href="{% url 'employerhome' %}"><i class="fa fa-dashboard fa-lg" style="color: rgb(0, 140, 114);"></i> Dashboard</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" style="color: rgb(0, 0, 0);" href=""><i class="fa fa-comments fa-lg" style="color: rgb(0, 140, 114);"></i> Messages</a>
+                <a class="nav-link" style="color: rgb(0, 0, 0);" href="{% url 'empmessages' %}"><i class="fa fa-comments fa-lg" style="color: rgb(0, 140, 114);"></i> Messages</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" style="color: rgb(0, 0, 0);" href=""><i class="fa fa-pencil-alt fa-lg" style="color: rgb(0, 140, 114);"></i> Post a Job</a>
+                <a class="nav-link" style="color: rgb(0, 0, 0);" href="{% url 'postjob' %}"><i class="fa fa-pencil-alt fa-lg" style="color: rgb(0, 140, 114);"></i> Post a Job</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" style="color: rgb(0, 0, 0);" href="{% url 'logout' %}"><i class="fa fa-user fa-lg" style="color: rgb(0, 140, 114);"></i> Accounts</a>
-              </li>
+             
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" style="color: rgb(0, 0, 0)" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="fa fa-user fa-lg" style="color: rgb(0, 140, 114);"></i> Accounts
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="{% url 'empprofile' %}"><i class="fa fa-file fa-lg" style="color: rgb(0, 140, 114);"></i>  Profile</a></li>
+                  <li><a class="dropdown-item" href="{% url 'logout' %}"> <i class="fa fa-power-off" style="color: rgb(0, 140, 114);"></i>  Signout</a></li>
+                </ul>
+              </li>  
             </ul>
 
                           

@@ -1,8 +1,8 @@
-{% extends 'Jobseeker/navbar.html' %}
+{% extends 'Employer/navbar.html' %}
 {% load static %}
 
 {% block title %}
-Job details
+Job update
 {% endblock %}
 
 
@@ -17,19 +17,19 @@ Job details
             <div class="col-lg-8">
                 <div class="row mt-3">
                     <div class="col-lg-8">
-                        <h3 class="mt-4" style="color: rgb(0, 0, 0);">Python Developer</h3>
-                        <p class="d-inline-block mt-3" style="color: rgb(123, 123, 123);">Posted on: 6 June,2023 |</p>
-                        <p class="d-inline-block" style="color: rgb(123, 123, 123);">Exp: 0-2 Years</p>
-                        <p style="color: rgb(129, 129, 129);">TCS</p>
-                        <p style="color: rgb(129, 129, 129);">Kochi, Kerala</p>
-                        <label class="mt-1 mb-1" style="background-color: rgb(255, 255, 255);"><i class="fa fa-inr"></i>25000 - <i class="fa fa-inr"></i>35000 a month</label>
+                        <h3 class="mt-5" style="color: rgb(0, 0, 0);"><input type="text" style="color: rgb(0, 0, 0);" class="form-control" value="Python Developer"></h3>
+                        <p class="d-inline-block mt-3" style="color: rgb(123, 123, 123);">Posted on:<input type="text" style="color: rgb(0, 0, 0);" class="form-control" value="6 June,2023"></p>
+                        <p class="d-inline-block" style="color: rgb(123, 123, 123);">Exp:<input type="text" style="color: rgb(0, 0, 0);" class="form-control" value="0-2 Years"> </p>
+                        <p style="color: rgb(129, 129, 129);"><input type="text" style="color: rgb(0, 0, 0);" class="form-control" value="TCS"></p>
+                        <p style="color: rgb(129, 129, 129);"><input type="text" style="color: rgb(0, 0, 0);" class="form-control" value="Kochi, Kerala"></p>
+                        <label class="mt-1 mb-1" style="background-color: rgb(255, 255, 255);"><i class="fa fa-inr"></i><input type="text" style="color: rgb(0, 0, 0);" class="form-control" value="25000-35000 a month"></label>
 
                         
                     </div>
                     
                     <div class="col-lg-4">
-                        <div class="row  mt-4">
-                          <center><button class="btn sp mb-3 w-50" type="button" style="color: rgb(0, 140, 114); border: solid 1px;" id="liveAlertBtn" >Apply</button></center>
+                        <div class="row  mt-3">
+                          <center><button class="btn sp mb-3 btn-sm w-25" type="button" style="color: rgb(0, 140, 114); border: solid 1px;" id="liveAlertBtn" >Delete</button></center>
 
                           <div id="liveAlertPlaceholder"></div>
                           <!-- <button type="button" class="btn btn-primary" id="liveAlertBtn">Show live alert</button> -->
@@ -52,18 +52,18 @@ Job details
                 </div>
                 <div class="row">
                     <p class=""><i class="fa  fa-money-bill-alt"></i> Salary</p>
-                    <p class="ms-4"><label class="mt-1 mb-1" style="background-color: rgb(238, 238, 238);"><i class="fa fa-inr"></i>25000 - <i class="fa fa-inr"></i>35000 a month</label>
+                    <p class="ms-4"><label class="mt-1 mb-1" style="background-color: rgb(255, 255, 255);"><i class="fa fa-inr"></i><input type="text" style="color: rgb(0, 0, 0);" class="form-control" value="25000-35000 a month"></label>
                     </p>
                 </div>
                 <div class="row">
                     <p class=""><i class="fa  fa-briefcase"></i> Job Type</p>
-                    <p class="ms-4"><label class="mt-1 mb-1" style="background-color: rgb(214, 255, 208);"> Full Time</label>
+                    <p class="ms-4"><label class="mt-1 mb-1" style="background-color: rgb(214, 255, 208);"> <input type="text" style="color: rgb(0, 0, 0);" class="form-control" value="Full Time"></label>
 
                     </p>
                 </div>
                 <div class="row">
                     <p class=""><i class="fa  fa-clock"></i> Shift and Schedule</p>
-                    <p class="ms-4"><label class="mt-1 mb-1" style="background-color: rgb(238,238,238);">Day Shift</label>
+                    <p class="ms-4"><label class="mt-1 mb-1" style="background-color: rgb(238,238,238);"><input type="text" style="color: rgb(0, 0, 0);" class="form-control" value="Day Shift"></label>
                     </p>
                 </div>
                 <hr>
@@ -78,52 +78,69 @@ Job details
                 <div class="row">
                     <h5>Full Job Description</h5>
                     <p style="text-align: justify;">
-                        We are looking for a Python Web Developer responsible for managing the interchange of data 
-                        between the server and the users. Your primary focus will be the development of all server-side logic, 
-                        ensuring high performance and responsiveness to requests from the front-end. You will also be responsible 
-                        for integrating the front-end elements built by your co-workers into the application; therefore, 
-                        a basic understanding of front-end technologies is necessary as well.
+                       <textarea name="" id="" cols="60" class="form-control" rows="10" >
+                            We are looking for a Python Web Developer responsible for managing the 
+                            interchange of data between the server and the users. Your primary focus will be 
+                            the development of all server-side logic, 
+                            ensuring high performance and responsiveness to requests from the front-end. 
+                            You will also be responsible for integrating the front-end elements built by your 
+                            co-workers into the application; 
+                            therefore, a basic understanding of front-end technologies is necessary as well.
+                       </textarea>
                     </p>
                 </div>
                 <div class="row">
                     <h5>Key Responsibilities</h5>
                     <p style="text-align: justify;">
-                        <ul  style="text-align: justify;">
-                            <li>Develop and maintain web applications using Django/FastAPI.</li>
-                            <li>Write clean, efficient, and well-documented code.</li>
-                            <li>Implement database solutions using SQL and no-SQL.</li>
-                            <li>Work with data structures and algorithms to solve complex problems.</li>
-                            <li>Collaborate with cross-functional teams to define, design, and ship new features.</li>
-                            <li>Participate in code reviews and contribute to the improvement of software development processes.</li>
-                        </ul>
+                       <textarea name="" id="" cols="30" rows="10" class="form-control">
+                        
+                            Develop and maintain web applications using Django/FastAPI.
+                            Write clean, efficient, and well-documented code.
+                            Implement database solutions using SQL and no-SQL.
+                            Work with data structures and algorithms to solve complex problems.
+                            Collaborate with cross-functional teams to define, design, and ship new features.
+                            Participate in code reviews and contribute to the improvement of 
+                            software development processes.
+                        
+                       </textarea>
                     </p>
                 </div>
                 <div class="row">
                     <h5>Qualification / Requirement</h5>
                     <p style="text-align: justify;">
-                        <ul  style="text-align: justify;">
-                            <li>Desired Candidate Profile: B.Tech / B.E. / MCA / BCA</li>
-                            <li>Strong experience with Django or FastAPI.</li>
-                            <li>Strong understanding of SQL and No-SQL.</li>
-                            <li>Experience with version control tools.</li>
-                            <li>Strong knowledge of data structures and algorithms.</li>
-                            <li>Good problem-solving and analytical skills.</li>
-                            <li>Good communication and interpersonal skills.</li>
-                            <li>Understanding of agile software development methodologies.</li>
-                            <li>Bachelor’s degree in Computer Science or related field.</li>
-                        </ul>
+                        <textarea name="" id="" cols="30" rows="10" class="form-control">
+                            Desired Candidate Profile: B.Tech / B.E. / MCA / BCA
+                            Strong experience with Django or FastAPI.
+                            Strong understanding of SQL and No-SQL.
+                            Experience with version control tools.
+                            Strong knowledge of data structures and algorithms.
+                            Good problem-solving and analytical skills.
+                            Good communication and interpersonal skills.
+                            Understanding of agile software development methodologies.
+                            Bachelor’s degree in Computer Science or related field.
+
+                        </textarea>
+                        
                     </p>
                 </div>
                 <hr>
                 <div class="row">
                     <h5>Hiring Insights</h5>
-                    <p style="color: rgb(123, 123, 123);"><i class="fa fa-user"></i> Hiring 10+ candidates for this role.</p>
+                    <p style="color: rgb(123, 123, 123);"><i class="fa fa-user"></i> <input type="text" style="color: rgb(0, 0, 0);" class="form-control" value="Hiring 10+ candidates for this role."></p>
 
+                </div>
+                <div class="row  mt-4">
+                    <a href="{% url 'empjobdetails' %}"><button class="btn sp mb-3 btn-sm w-25" type="button" style="color: rgb(0, 140, 114); border: solid 1px;" >Save</button></a>
+    
+                    
+                     
+    
                 </div>
                 
             </div>
             
             <div class="col-lg-2"></div>
+            
         </div>
     </div>
 </section>
@@ -205,7 +222,7 @@ Job details
   }
 </style>
 
-<script>
+<!-- <script>
   const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
 const appendAlert = (message, type) => {
   const wrapper = document.createElement('div')
@@ -225,5 +242,5 @@ if (alertTrigger) {
     appendAlert('Applied Successfully!', 'success')
   })
 }
-</script>
+</script> -->
 {% endblock %}

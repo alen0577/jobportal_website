@@ -2,46 +2,57 @@
 {% load static %}
 
 {% block title %}
-Home emp
+Edit Profile emp
 {% endblock %}
 
 
 
-
 {% block body %}
+
 <section>
-    <div class="container">
+    <div class="container mt-5">
         <div class="row mt-5">
-            <div class="col-lg-2"></div>
-            <div class="col-lg-8">
-                <h3 class=" mb-3" style="color:rgb(0, 140, 114);">Active Jobs</h3>
-            </div>
-            <div class="col-lg-2"></div>
-        </div>
-        <div class="row mt-5">
-            <div class="col-lg-2"></div>
-            <div class="col-lg-8">
-                <div class="row row-cols-1 row-cols-md-3 g-4">
-                    <div class="col">
-                        <div class="card card1 h-100  p-2 mb-2 bg-body-tertiary rounded">
-                          <div class="card-body">
-                            
-                            <h5 class="card-title" style="color: rgb(0, 0, 0);">Python Developer</h5>
-                            <h6 style="color: rgb(129, 129, 129);">Vaccancies: 10</h6>
-                            <h6 style="color: rgb(129, 129, 129);">Applied: 15</h6>
-                            <h6 style="color: rgb(129, 129, 129);">Kochi, Kerala</h6>
-                            <a href="{% url 'empjobdetails' %}"><button class="btn btn-sm mt-lg-2 mb-0 " type="button" style="color:rgb(0, 140, 114);" >Job details</button></a>
-                            <a href="{% url 'applicants' %}"><button class="btn btn-sm mt-lg-2 mb-0 " type="button" style="color:rgb(0, 140, 114);" >View applications</button></a>
-                            
-                          </div>
-                        </div>
+            <div class="col-lg-3"></div>
+            <div class="col-lg-6">
+                <div class="row">
+                    <div class="box mt-5 mb-3" style="text-align:justify;">
+                        <img src="{% static 'images/avatar.png' %}" alt="Avatar" style="width:200px">
+                        <input type="file" accept="image/*">
+                        <h3 class="mt-3" style="color: rgb(0, 0, 0);" ><i class="fa fa-user-circle"></i><input type="text" style="color: rgb(0, 0, 0);" class="form-control" value="TCS Admin"></h3>
                     </div>
+
+                </div>
+                <div class="row">
+                    <div class="box mt-2 mb-2" style="text-align:justify;">
+                        <h6 style="color: rgb(0, 0, 0);" ><i class="fa fa-envelope"></i><input type="text" style="color: rgb(0, 0, 0);" class="form-control" value="tcsadmin@gmail.com"> </h6>
+                        <h6 style="color: rgb(0, 0, 0);" ><i class="fa fa-phone"></i> <input type="number" style="color: rgb(0, 0, 0);" class="form-control" value="9784563212"></h6>
+                        <h6 style="color: rgb(0, 0, 0);" ><i class="fa fa-location"></i> <input type="text" style="color: rgb(0, 0, 0);" class="form-control" value="Kochi, Kerala"> </h6>
+                    </div>
+                    
+                </div>
+                
+                
+                <div class="row">
+                  <div class="box mt-2 mb-2" style="text-align:justify;">
+                    <h5 style="color: rgb(0, 140, 114);" >Company Details</h5>
+                    <h6 style="color: rgb(0, 0, 0);" ><i class="fa fa-users"></i> No.of Employers: <input type="text" style="color: rgb(0, 0, 0);" class="form-control mt-1" value="10000+"> </h6>
+                    <h6 style="color: rgb(0, 0, 0);" ><i class="fa fa-briefcase"></i> Company Type: <input type="text" style="color: rgb(0, 0, 0);" class="form-control mt-1" value="IT Services and IT Consulting"> </h6>
+                    <h6 style="color: rgb(0, 0, 0);" ><i class="fa fa-location"></i> Headquarters: <input type="text" style="color: rgb(0, 0, 0);" class="form-control mt-1" value="Mumbai,Maharashtra"></h6>
+                    <h6 style="color: rgb(0, 0, 0);" ><i class="fa fa-search"></i> Website: <input type="text" style="color: rgb(0, 0, 0);" class="form-control mt-1" value="https://www.tcs.com/"></h6>
+
+                      
+                  </div>
+                  
+                </div>
+                <div class="row mt-4">
+                    <a href="{% url 'empprofile' %}"><button type="button" class="btn sp mb-4 btn-sm w-25" style="color: rgb(0, 140, 114);border: 1px solid rgb(0, 140, 114);">Update</button></a>
                 </div>
             </div>
-            <div class="col-lg-2"></div>
+            <div class="col-lg-3"></div>
         </div>
     </div>
 </section>
+
 
 <hr class="mt-5">
 <section id="sectionlast">
@@ -95,7 +106,6 @@ Home emp
 </section> 
 
 
-
 <style>
     button.sp{
     transition: box-shadow 0.3s ease-in-out;
@@ -119,6 +129,11 @@ Home emp
     box-shadow: 0px 0px 10px rgb(0, 140, 114, .5);
         
   }
+  img {
+  border-radius: 50%;
+  }
+
 </style>
+
 
 {% endblock %}

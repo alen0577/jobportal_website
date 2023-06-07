@@ -10,22 +10,37 @@ Notifications
 {% block body %}
 
 <section>
-    <div class="container mt-5">
-        <div class="row mt-5">
+    <div class="container mt-2">
+        <div class="row mt-2">
             <div class="col-lg-3"></div>
             <div class="col-lg-6">
-                <div class="row">
-                    <div class="box mt-5 mb-3" style="text-align: center;">
-                        <h1 style="color: rgb(0, 140, 114);" ><i class="fa fa-bell fa-lg"></i></h1>
-                        <h3>Nothing right now. Check back later !</h3>
-                        <p>This is where we’ll notify you about your job applications and other 
-                            useful information to help you with your job search.
-                        </p>
-                    </div>
+              <div class="row">
+                <div class="box mt-5 mb-3" style="text-align: center;">
+                    <h1 style="color: rgb(0, 140, 114);" ><i class="fa fa-bell fa-lg"></i></h1>
+                    
                 </div>
-                <div class="row">
-                    <center><a href="{% url 'home' %}"><button type="button" class="btn sp mb-5" style="color: rgb(0, 140, 114);border: 1px solid rgb(0, 140, 114);">Find Jobs</button></a></center>
+              </div>
+              <div class="row">
+                <div class="box mt-1 mb-3 border border-success rounded" style="text-align:center;">
+                  <span class="text-body-secondary">02-june-2023 12:05 pm</span>
+                  <p class="mt-2">"You have got a message from TCS hiring team".</p> 
+                  <p>Go to messages to read that.</p>
+                    
+                    
+                
                 </div>
+              </div>
+              <div class="row">
+                <div class="box mt-5 mb-3" style="text-align:center;">    
+                  <p>This is where we’ll notify you about your job applications and other 
+                      useful information to help you with your job search.
+                  </p>
+                </div>
+              </div>
+
+              <div class="row">
+                  <center><a href="{% url 'home' %}"><button type="button" class="btn sp mb-5" style="color: rgb(0, 140, 114);border: 1px solid rgb(0, 140, 114);">Find Jobs</button></a></center>
+              </div>
             </div>
             <div class="col-lg-3"></div>
         </div>

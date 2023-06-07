@@ -72,17 +72,38 @@ def alljobs(request):
 
 
 def notifications(request):
-    return render(request,'jobseeker/notifications.html')    
+    return render(request,'Jobseeker/notifications.html')    
 
 def profile(request):
-    return render(request,'jobseeker/profile.html')
+    return render(request,'Jobseeker/profile.html')
 
 def editprofile(request):
-    return render(request,'jobseeker/editprofile.html')    
+    return render(request,'Jobseeker/editprofile.html')    
 
 
 def messages(request):
-    return render(request,'jobseeker/messages.html')  
+    return render(request,'Jobseeker/messages.html')  
 
 def myjobs(request):
-    return render(request,'jobseeker/myjobs.html')         
+    return render(request,'Jobseeker/myjobs.html')         
+
+def postjob(request):
+    return render(request,'Employer/postjob.html')      
+
+def empprofile(request):
+    return render(request,'Employer/profile.html')    
+
+def empeditprofile(request):
+    return render(request,'Employer/editprofile.html')   
+
+def empjobdetails(request):
+    return render(request,'Employer/jobdetails.html') 
+
+def jobupdate(request):
+    return render(request,'Employer/jobupdate.html')  
+
+def applicants(request):
+    return render(request,'Employer/table.html')  
+
+def empmessages(request):
+    return render(request,'Employer/messages.html')                     

@@ -18,29 +18,47 @@ Edit Profile
                     <div class="box mt-5 mb-3" style="text-align:justify;">
                         <img src="{% static 'images/avatar.png' %}" alt="Avatar" style="width:200px">
                         <input type="file" accept="image/*">
-                        <h2 class="mt-3" style="color: rgb(0, 140, 114);" ><input type="text" style="color: rgb(0, 0, 0);" class="form-control" value="Alex Jhonson"></h2>
+                        <h3 class="mt-3" style="color: rgb(0, 0, 0);" ><i class="fa fa-user-circle"></i><input type="text" style="color: rgb(0, 0, 0);" class="form-control" value="Alex Jhonson"></h3>
                     </div>
 
                 </div>
                 <div class="row">
                     <div class="box mt-2 mb-2" style="text-align:justify;">
-                        <h5 style="color: rgb(0, 0, 0);" ><i class="fa fa-envelope"></i> <input type="text"  class="form-control ms-2" value="alex55@gmail.com"> </h5>
-                        <h5 style="color: rgb(0, 0, 0);" ><i class="fa fa-phone"></i> <input type="number"  class="form-control ms-2" value="9784563212"></h5>
-                        <h5 style="color: rgb(0, 0, 0);" ><i class="fa fa-location"></i> <input type="text"  class="form-control ms-2" value="Alappuzha, Kerala"> </h5>
+                        <h6 style="color: rgb(0, 0, 0);" ><i class="fa fa-envelope"></i> <input type="text"  class="form-control ms-2" value="alex55@gmail.com"> </h6>
+                        <h6 style="color: rgb(0, 0, 0);" ><i class="fa fa-phone"></i> <input type="number"  class="form-control ms-2" value="9784563212"></h6>
+                        <h6 style="color: rgb(0, 0, 0);" ><i class="fa fa-location"></i> <input type="text"  class="form-control ms-2" value="Alappuzha, Kerala"> </h6>
                     </div>
                     
                 </div>
                 <div class="row">
                     <div class="box mt-2 mb-2" style="text-align:justify;">
-                        <h4 style="color: rgb(0, 140, 114);" >Resume</h4>
-                        <h5 style="color: rgb(0, 0, 0);" ><i class="fa fa-file"></i> Alexjohnson_resume.pdf</h5>
+                        <h5 style="color: rgb(0, 140, 114);" >Resume</h5>
+                        <h6 style="color: rgb(0, 0, 0);" ><i class="fa fa-file"></i> Alexjohnson_resume.pdf</h6>
                         <input type="file">
                         
                     </div>
                     
                 </div>
-                <div class="row mt-5">
-                    <a href="{% url 'profile' %}"><button type="button" class="btn sp mb-5" style="color: rgb(0, 140, 114);border: 1px solid rgb(0, 140, 114);">Update</button></a>
+                <div class="row">
+                  <div class="box mt-2 mb-2" style="text-align:justify;">
+                    <h5 style="color: rgb(0, 140, 114);" >Qualifications</h5>
+                    <h6 style="color: rgb(0, 0, 0);" ><i class="fa fa-graduation-cap"></i> <input type="text" class="form-control ms-2" value="B-Tech Computer Science"></h6>
+                      
+                  </div>
+                  
+                </div>
+                <div class="row">
+                  <div class="box mt-2 mb-2" style="text-align:justify;">
+                    <h5 style="color: rgb(0, 140, 114);" >Job preferences</h5>
+                    <h6 style="color: rgb(0, 0, 0);" ><i class="fa fa-user"></i> Job Title: <input type="text" class="form-control ms-2 mt-1" value="Python/Django Developer"></h6>
+                    <h6 style="color: rgb(0, 0, 0);" ><i class="fa fa-briefcase"></i> Job Types: <input type="text" class="form-control ms-2 mt-1" value="Full Time"></h6>
+                    <h6 style="color: rgb(0, 0, 0);" ><i class="fa fa-location"></i> Relocation: <input type="text" class="form-control ms-2 mt-1" value="Willing to relocate anywhere"></h6>
+                      
+                  </div>
+                  
+                </div>
+                <div class="row mt-4">
+                    <a href="{% url 'profile' %}"><button type="button" class="btn sp mb-4 btn-sm w-25" style="color: rgb(0, 140, 114);border: 1px solid rgb(0, 140, 114);">Update</button></a>
                 </div>
             </div>
             <div class="col-lg-3"></div>

@@ -10,38 +10,95 @@ My Jobs
 {% block body %}
 
 <section>
-    <div class="container mt-3">
-        <div class="row mt-3">
-            <div class="col-lg-3"></div>
-            <div class="col-lg-6">
-                <div class="row">
-                    <div class="box mt-5 mb-1">
-                        <h1 style="color: rgb(0, 140, 114);" >My Jobs</h1>
-                    </div>
+  <div class="container mt-3">
+    <div class="row mt-3">
+      <div class="col-lg-2"></div>
+      <div class="col-lg-8">
+        <div class="row">
+          <div class="box mt-5 mb-1">
+            <h1 style="color: rgb(0, 140, 114);" >My Jobs</h1>
+          </div>
 
-                </div>
-                <div class="row">
-                    <div class="box mt-1 mb-2" style="text-align:left;">
-                        <h5 style="color: rgb(112, 112, 112);" ><i class="fa fa-save"></i><span class="ms-2" >Saved 0</span> </h5>
-                        <h5 style="color: rgb(112, 112, 112);" ><i class="fa fa-paper-plane"></i><span class="ms-2">Applied 0</span></h5>
-                        <h5 style="color: rgb(112, 112, 112);" ><i class="fa fa-user"></i><span class="ms-2">Interviews 0</span></h5>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="box mt-3 mb-3">
-                        
-                        <h4>No jobs saved yet</h4>
-                        <p>Jobs you saved here appears.
-                        </p>
-                    </div>
-                </div>
-                <div class="row">
-                    <center><a href="{% url 'home' %}"><button type="button" class="btn sp mb-5" style="color: rgb(0, 140, 114);border: 1px solid rgb(0, 140, 114);">Find Jobs</button></a></center>
-                </div>
-            </div>
-            <div class="col-lg-3"></div>
         </div>
+            
+        <div class="row">
+          <div class="box mt-3 mb-3">
+            <h5 style="color: rgb(0, 0, 0);" ><i class="fa fa-paper-plane"></i><span class="ms-2">Applied:1</span></h5>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+              <div class="col">
+                <div class="card card1 h-100  p-2 mb-2 bg-body-tertiary rounded">
+                  <div class="card-body">
+                    <p style="color: brown;">new</p>
+                    <h5 class="card-title" style="color: rgb(0, 0, 0);">Python Developer</h5>
+                    <h6 style="color: rgb(129, 129, 129);">TCS</h6>
+                    <h6 style="color: rgb(129, 129, 129);">(0-2)year experience</h6>
+                    <h6 style="color: rgb(129, 129, 129);">Kochi, Kerala</h6>
+                    <label class="mt-1 mb-1" style="background-color: rgb(238, 238, 238);"><i class="fa fa-inr"></i>25000 - <i class="fa fa-inr"></i>35000</label>
+                    <label class="mt-1 mb-1" style="background-color: rgb(228, 255, 224)"><i class="fa fa-briefcase"></i> Full Time</label><br>
+                    <label class="mt-1 mb-1" style="background-color: rgb(238,238,238);"><i class="fa fa-clock"></i>Day Shift</label><br>
+                    <a href=""><button class="btn btn-sm mt-lg-2 mb-0 " type="button" style="color:rgb(0, 140, 114);" >Applied</button></a>
+                            
+                            
+                  </div>
+                </div>
+              </div>
+
+                    
+                    
+            </div>
+          </div>
+         
+        </div>
+        <div class="row">
+          <div class="box mt-3 mb-3">
+            <h5 style="color: rgb(0, 0, 0);" ><i class="fa fa-save"></i><span class="ms-2" >Saved: 2</span> </h5>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+              <div class="col">
+                <div class="card card1 h-100  p-2 mb-2 bg-body-tertiary rounded">
+                  <div class="card-body">
+                    <p style="color: brown;">new</p>
+                    <h5 class="card-title" style="color: rgb(0, 0, 0);">Python Internship</h5>
+                    <h6 style="color: rgb(129, 129, 129);">Wipro</h6>
+                    <h6 style="color: rgb(129, 129, 129);">Freshers</h6>
+                    <h6 style="color: rgb(129, 129, 129);">Kochi, Kerala</h6>
+                    <label class="mt-1 mb-1" style="background-color: rgb(238, 238, 238);"><i class="fa fa-inr"></i>10000 - <i class="fa fa-inr"></i>15000</label>
+                    <label class="mt-1 mb-1" style="background-color: rgb(228, 255, 224);"><i class="fa fa-briefcase"></i> Full Time</label><br>
+                    <label class="mt-1 mb-1" style="background-color: rgb(238,238,238);"><i class="fa fa-clock"></i> Day Shift</label><br>
+                    <a href=""><button class="btn btn-sm mt-lg-2 mb-0 " type="button" style="color:rgb(0, 140, 114);" >Apply now</button></a>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card card1 h-100  p-2 mb-2 bg-body-tertiary rounded">
+                  <div class="card-body">
+                    <p style="color: brown;">new</p>
+                    <h5 class="card-title" style="color: rgb(0, 0, 0);">Flutter Developer</h5>
+                    <h6 style="color: rgb(129, 129, 129);">Infosys</h6>
+                    <h6 style="color: rgb(129, 129, 129);">(0-1)year experience</h6>
+                    <h6 style="color: rgb(129, 129, 129);">Kerala, India</h6>
+                    <label class="mt-1 mb-1" style="background-color: rgb(238, 238, 238);"><i class="fa fa-inr"></i>25000 - <i class="fa fa-inr"></i>30000</label>
+                    <label class="mt-1 mb-1" style="background-color: rgb(228, 255, 224);"><i class="fa fa-briefcase"></i> Full Time</label><br>
+                    <label class="mt-1 mb-1" style="background-color: rgb(238,238,238);"><i class="fa fa-clock"></i> Day Shift</label><br>
+                    <a href=""><button class="btn btn-sm mt-lg-2 mb-0 " type="button" style="color:rgb(0, 140, 114);" >Apply now</button></a>
+                    
+                  </div>
+                </div>
+              </div>
+              
+         
+            </div>
+          </div>
+         
+        </div>
+
+      <div class="col-lg-2"></div>
+      <div class="row mt-5 mb-3">
+        <center><a href="{% url 'home' %}"><button type="button" class="btn sp mb-5" style="color: rgb(0, 140, 114);border: 1px solid rgb(0, 140, 114);">Find more Jobs...</button></a></center>
+      </div>
     </div>
+  </div>
+
 </section>
 
 
@@ -124,3 +181,12 @@ My Jobs
 
 
 {% endblock %}
+
+
+<!-- <div class="row">
+  <div class="box mt-1 mb-2" style="text-align:left;">
+      <h5 style="color: rgb(112, 112, 112);" ><i class="fa fa-save"></i><span class="ms-2" >Saved 0</span> </h5>
+      <h5 style="color: rgb(112, 112, 112);" ><i class="fa fa-paper-plane"></i><span class="ms-2">Applied 0</span></h5>
+      <h5 style="color: rgb(112, 112, 112);" ><i class="fa fa-user"></i><span class="ms-2">Interviews 0</span></h5>
+  </div>
+</div> -->
